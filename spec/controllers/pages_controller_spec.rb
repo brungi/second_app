@@ -14,13 +14,7 @@ render_views
 	response.should have_selector("title",
 	              :content => "Ruby on rails Tutorial Sample App | Home")
    end
-   
-   it "should have a non-block body" do
-  get 'home'
-  response.body.should_not - /<body>\s*<\/body>/
-   end
   end
-  
   describe "GET 'contact'" do
     it "should be successful" do
       get 'contact'

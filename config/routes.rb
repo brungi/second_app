@@ -5,6 +5,7 @@ SecondApp::Application.routes.draw do
   
   get "pages/about"
   
+  get "pages/application"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

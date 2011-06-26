@@ -1,0 +1,30 @@
+.container {
+width:710px;
+}
+
+body {
+backgroung: #cff;
+}
+
+header{
+padding-top: 20px;
+}
+
+section {
+margin-top:1em;
+font-size:120%
+padding:20px; 
+background: #fff
+}
+
+/*Link*/
+
+a{
+color: #09c;
+text-decoration:none;
+}
+
+a:haver {
+color: #069;
+text-decoration:under
+

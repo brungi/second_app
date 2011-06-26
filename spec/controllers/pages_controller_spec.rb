@@ -41,4 +41,17 @@ render_views
                    :content => "Ruby on rails Tutorial Sample App | About")
   end
   end
+  descrite " 'help'" do
+  it "should be successful" do
+	get 'help'
+	response.should be_success
+  end
+  end
+  
+    it "should have the right title" do
+  get 'help'
+  response.should have_selector("title",
+                   :content => "Ruby on rails Tutorial Sample App | About")
+  end
+  end
 end

@@ -51,7 +51,7 @@ render_views
     it "should have the right title" do
   get 'help'
   response.should have_selector("title",
-                   :content => "Ruby on rails Tutorial Sample App | About")
+                   :content => "Ruby on rails Tutorial Sample App | Help")
   end
   end
 end

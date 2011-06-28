@@ -18,8 +18,13 @@ it "should have an About page at '/about'" do
 get '/about'
 response.should have_selector('title', :content => "About")
 end
-it "shosul be Help page at '/help'" do
+it "should have an Help page at '/help'" do
 get '/help'
 response.should have_selector('title', :content => "help")
+end
+it "should have the right links on the layout" do
+visit root_path
+response.should have_selector('title', :content => "Home")
+click_line "About"
 end
 end

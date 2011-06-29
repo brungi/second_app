@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   
-  def home
+  def root_path
   @title = "Home"
   end
 
